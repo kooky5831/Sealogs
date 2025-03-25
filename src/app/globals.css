@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: "Inter";
+    src: url('../fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
+@font-face {
+    font-family: "MonaSans";
+    src: url('../fonts/MonaSans[slnt,wdth,wght].ttf');
+}
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+:focus,
+:focus-visible {
+    outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient( to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.ql-container {
+    border-radius: 0 0 0.5rem 0.5rem;
+    font-family: "MonaSans" !important;
+    font-size: 0.875rem !important;
+}
+
+.ql-toolbar {
+    border-radius: 0.5rem 0.5rem 0 0;
+    display: flex;
+}
+
+.ql-toolbar.ql-snow .ql-formats{
+    display: flex;
+}
+
+.swiper-slide {
+    width: auto !important;
+}
+.fc .fc-view-harness {
+    height: 100% !important;
+}
+.fc .fc-toolbar-title {
+    font-size: 1.5em;
+    text-wrap: wrap;
+}
+
+.fc .fc-scroller-liquid {
+    border-radius: 10px;
+}
+
+.fc .fc-view-harness-active>.fc-view {
+    border-radius: 10px;
+    position: relative;
+}
+
+.fc-theme-standard .fc-list {
+    height: fit-content !important;
+}
+
+.fc-toolbar-chunk {
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 400px) {
+    .fc .fc-toolbar-title {
+        font-size: 1em !important;
+    }
+}
+
+ubdiv.userback-button.userback-button-e {
+    display: none !important;
+}
+
+.ql-container.ql-snow {
+    border: none !important;
+}
+
+.ql-editor.ql-blank::before {
+    font-style: normal !important;
+}
+
+.dark .fc-event.fc-event-start.fc-event-end.fc-list-event {
+    color: white;
+}
+
+.dark .fc-event.fc-event-start.fc-event-end.fc-list-event:hover {
+    color: #355073;
+}
+
+.fc .fc-scroller-liquid-absolute,
+.fc .fc-scroller-harness {
+    overflow: visible !important;
+}
