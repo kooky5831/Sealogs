@@ -1,0 +1,10 @@
+BASE_URL = "http://localhost:3000/"
+API_BASE_URL = "https://uat3.sealogs.com/api/"
+GRAPHQL_API_ENDPOINT = "https://uat3.sealogs.com/graphql/"
+FILE_BASE_URL = "https://uat3.sealogs.com/assets/"
+STORMGLASS_API_KEY = "480c5714-38bc-11ea-acb4-0242ac130002-480c58fe-38bc-11ea-acb4-0242ac130002"
+
+-Gmail:
+ dan.roberts@southinc.co.nz
+-Password
+ Danroberts

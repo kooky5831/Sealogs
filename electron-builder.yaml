@@ -1,0 +1,17 @@
+appId: 'com.sealogs.app24'
+productName: 'SeaLogs'
+copyright: 'Copyright (c) 2024 SeaLogs Limited. All rights reserved.'
+win:
+    target:
+        [
+            { target: 'zip', arch: ['x64'] },
+            { target: 'msi', arch: ['x64'] },
+            { target: 'portable', arch: ['x64'] },
+        ]
+    icon: 'resources/sl-icon-desktop.icns'
+mac:
+    target: [{ target: 'dmg', arch: 'universal' }]
+    icon: 'resources/sl-icon-desktop.icns'
+    category: 'public.app-category.business'
+    darkModeSupport: true
+    mergeASARs: false
